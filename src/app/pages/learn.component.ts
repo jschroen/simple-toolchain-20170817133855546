@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 
 /*init DataService code-by-colors #7F1C7D*/
+import { DataService } from '../shared/services/data.service';
 
 @Component({
   selector: 'learn',
@@ -17,6 +18,7 @@ export class LearnComponent implements OnInit {
 
   constructor(
     /*init DataService code-by-color #7F1C7D*/
+    private dataService: DataService,
   ) { }
 
   /*adds discovery query to frontend code-by-color #AB1A86*/
