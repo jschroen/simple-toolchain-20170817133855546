@@ -27,6 +27,11 @@
           <div fxFlex>
             <h3 md-subheader>Education</h3>
             <!--adds education code-by-color #140956-->
+            <md-list-item *ngFor="let school of schools">
+              <md-icon md-list-icon class="mat-list-icon">school</md-icon>
+              <h4 md-line>{{school.name}}</h4>
+              <p md-line class="text-wrap"> {{school.start | date:'MM/yyyy'}} - {{school.end | date:'MM/yyyy'}}</p>
+            </md-list-item>
           </div>
           <md-divider style="margin-top: 1em"></md-divider>
           <div fxFlex>
